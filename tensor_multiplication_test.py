@@ -74,7 +74,3 @@ def test_two_neurons_with_a_batch_of_inputs():
     b = torch.tensor([-1.5, -0.5])
     assert calculate_matrix_prod_with_bias(X, W, b).tolist() == [[1.5, 5.5], [6.0, 14.5]], "wrong output"
     assert calculate_output(X, W, b).tolist() == [[1.0, 1.0], [1.0, 1.0]], "wrong output"
-
-
-if __name___ == "__main__":
-    setup_tensors() 
